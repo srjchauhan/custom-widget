@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CapacityBar from './components/CapacityIndicator/CapacityIndicator';
+import { barData } from './components/CapacityIndicator/constant';
+import CircularSlider from './components/CircularSlider/CircularSlider';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Custom widget </h1>
+      <section className='widget-wrapper'>
+      <CircularSlider/>
+      <CapacityBar indicatorList={barData}/>
+      </section>
     </div>
   );
 }
