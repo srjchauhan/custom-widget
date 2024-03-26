@@ -21,26 +21,26 @@ The `CapacityIndicator` component is used to display the capacity status in the 
 This React component renders a customizable circular slider for selecting a value within a specified range. It combines a circular progress indicator with a slider track for intuitive user interaction.
 
 ## Props
-| Prop                       | Type     | Default Value | Description                                                                 |   |   |   |
-|----------------------------|----------|---------------|-----------------------------------------------------------------------------|---|---|---|
-| width                      | number   |           300 | Sets the overall width of the slider in pixels. (min: 200)                  |   |   |   |
-| height                     | number   |           350 | Sets the overall height of the slider in pixels. (min: 200)                 |   |   |   |
-| backgroundColor            | string   | undefined     | Sets the background color of the slider container.                          |   |   |   |
-| sliderMaxValue             | number   |            10 | Sets the maximum value selectable on the slider.                            |   |   |   |
-| sliderMinValue             | number   |             0 | Sets the minimum value selectable on the slider.                            |   |   |   |
-| sliderStepvalue            | number   |             1 | Sets the step value for increments on the slider.                           |   |   |   |
-| sliderDefaultValue         | number   |             0 | Sets the initial value displayed on the slider. (clamped)                   |   |   |   |
-| centerImageUrl             | string   | centerImage   | Sets the image URL to display in the center of the progress circle.         |   |   |   |
-| onChange                   | function | () => {}      | A callback function triggered when the slider value changes.                |   |   |   |
-| dashColor                  | string   | #819ca7       | Sets the color of the circular dash pattern.                                |   |   |   |
-| dashWidth                  | string   | 2px           | Sets the width of the circular dash pattern (CSS value).                    |   |   |   |
-| progressBarColor           | string   | white         | Sets the color of the progress bar within the circle.                       |   |   |   |
-| progressBarBackgroundColor | string   | #718993       | Sets the background color of the progress bar within the circle.            |   |   |   |
-| centerTextFontSize         | number   | 20            | Sets the font size of the value displayed in the center (px).               |   |   |   |
-| centerTextFontColor        | string   | white         | Sets the font color of the value displayed in the center.                   |   |   |   |
-| progressBarWidth           | number   | 10            | Sets the width of the progress bar within the circle (px).                  |   |   |   |
-| sliderBackgroundColor      | string   | white         | Sets the background color of the slider track.                              |   |   |   |
-| sliderFilledColor          | string   | #00d5b6       | Sets the color of the filled portion of the slider track based on progress. |   |   |   |
+| Prop                       | Type     | Default Value | Description                                                                 
+|----------------------------|----------|---------------|--------------------------------------------------------------------------------|
+| width                      | number   |           300 | Sets the overall width of the slider in pixels. (min: 200)                  
+| height                     | number   |           350 | Sets the overall height of the slider in pixels. (min: 200)                 
+| backgroundColor            | string   | undefined     | Sets the background color of the slider container.                          
+| sliderMaxValue             | number   |            10 | Sets the maximum value selectable on the slider.                            
+| sliderMinValue             | number   |             0 | Sets the minimum value selectable on the slider.                            
+| sliderStepvalue            | number   |             1 | Sets the step value for increments on the slider.                           
+| sliderDefaultValue         | number   |             0 | Sets the initial value displayed on the slider. (clamped)                   
+| centerImageUrl             | string   | centerImage   | Sets the image URL to display in the center of the progress circle.         
+| onChange                   | function | () => {}      | A callback function triggered when the slider value changes.                
+| dashColor                  | string   | #819ca7       | Sets the color of the circular dash pattern.                                
+| dashWidth                  | string   | 2px           | Sets the width of the circular dash pattern (CSS value).                    
+| progressBarColor           | string   | white         | Sets the color of the progress bar within the circle.                       
+| progressBarBackgroundColor | string   | #718993       | Sets the background color of the progress bar within the circle.            
+| centerTextFontSize         | number   | 20            | Sets the font size of the value displayed in the center (px).               
+| centerTextFontColor        | string   | white         | Sets the font color of the value displayed in the center.                   
+| progressBarWidth           | number   | 10            | Sets the width of the progress bar within the circle (px).                  
+| sliderBackgroundColor      | string   | white         | Sets the background color of the slider track.                              
+| sliderFilledColor          | string   | #00d5b6       | Sets the color of the filled portion of the slider track based on progress. 
 
 ## Available Scripts
 
