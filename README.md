@@ -10,7 +10,7 @@ The `CapacityIndicator` component is used to display the capacity status in the 
 | Prop            | Type     | Default Value | Description                                                                                                     |
 |-----------------|----------|---------------|-----------------------------------------------------------------------------------------------------------------|
 | height          | string   | 350px       | Sets the overall height of the indicator.                                                                       |
-| width           | string   | 300px"       | Sets the overall width of the indicator.                                                                        |
+| width           | string   | 300px       | Sets the overall width of the indicator.                                                                        |
 | backgroundColor | string   | #284e5d     | Sets the background color of the indicator.                                                                     |
 | onBarChange     | function | () => {}      | A callback function triggered when the active bar changes. It receives the selected bar's value as an argument. |
 | barDefaultColor | string   | #819ca7     | Sets the default color of the bars.                                                                             |
@@ -25,7 +25,7 @@ This React component renders a customizable circular slider for selecting a valu
 |----------------------------|----------|---------------|--------------------------------------------------------------------------------|
 | width                      | number   |           300 | Sets the overall width of the slider in pixels. (min: 200)                  
 | height                     | number   |           350 | Sets the overall height of the slider in pixels. (min: 200)                 
-| backgroundColor            | string   | undefined     | Sets the background color of the slider container.                          
+| backgroundColor            | string   | #284e5d     | Sets the background color of the slider container.                          
 | sliderMaxValue             | number   |            10 | Sets the maximum value selectable on the slider.                            
 | sliderMinValue             | number   |             0 | Sets the minimum value selectable on the slider.                            
 | sliderStepvalue            | number   |             1 | Sets the step value for increments on the slider.                           
