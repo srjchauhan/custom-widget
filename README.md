@@ -1,6 +1,46 @@
-# Getting Started with Create React App
+# Custom Widget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Customizable Circular Slider and capacity indicator widget developed using React
+
+StoryBook [Link](https://6602563496eb1292abb4b41b-aknvjkzpuy.chromatic.com/)
+# CapacityIndicator
+The `CapacityIndicator` component is used to display the capacity status in the application.
+
+## Props
+| Prop            | Type     | Default Value | Description                                                                                                     |
+|-----------------|----------|---------------|-----------------------------------------------------------------------------------------------------------------|
+| height          | string   | "350px"       | Sets the overall height of the indicator.                                                                       |
+| width           | string   | "300px"       | Sets the overall width of the indicator.                                                                        |
+| backgroundColor | string   | undefined     | Sets the background color of the indicator.                                                                     |
+| onBarChange     | function | () => {}      | A callback function triggered when the active bar changes. It receives the selected bar's value as an argument. |
+| barDefaultColor | string   | "#819ca7"     | Sets the default color of the bars.                                                                             |
+| barActiveColor  | string   | "white"       | Sets the color of the active bar (the bar representing the selected value).                                     |
+| defaultValue    | number   |             1 | Sets the initial value (corresponding to a bar) displayed as active.                                            |
+
+# CircularSlider
+This React component renders a customizable circular slider for selecting a value within a specified range. It combines a circular progress indicator with a slider track for intuitive user interaction.
+
+## Props
+| Prop                       | Type     | Default Value | Description                                                                 |   |   |   |
+|----------------------------|----------|---------------|-----------------------------------------------------------------------------|---|---|---|
+| width                      | number   |           300 | Sets the overall width of the slider in pixels. (min: 200)                  |   |   |   |
+| height                     | number   |           350 | Sets the overall height of the slider in pixels. (min: 200)                 |   |   |   |
+| backgroundColor            | string   | undefined     | Sets the background color of the slider container.                          |   |   |   |
+| sliderMaxValue             | number   |            10 | Sets the maximum value selectable on the slider.                            |   |   |   |
+| sliderMinValue             | number   |             0 | Sets the minimum value selectable on the slider.                            |   |   |   |
+| sliderStepvalue            | number   |             1 | Sets the step value for increments on the slider.                           |   |   |   |
+| sliderDefaultValue         | number   |             0 | Sets the initial value displayed on the slider. (clamped)                   |   |   |   |
+| centerImageUrl             | string   | centerImage   | Sets the image URL to display in the center of the progress circle.         |   |   |   |
+| onChange                   | function | () => {}      | A callback function triggered when the slider value changes.                |   |   |   |
+| dashColor                  | string   | #819ca7       | Sets the color of the circular dash pattern.                                |   |   |   |
+| dashWidth                  | string   | 2px           | Sets the width of the circular dash pattern (CSS value).                    |   |   |   |
+| progressBarColor           | string   | white         | Sets the color of the progress bar within the circle.                       |   |   |   |
+| progressBarBackgroundColor | string   | #718993       | Sets the background color of the progress bar within the circle.            |   |   |   |
+| centerTextFontSize         | number   | 20            | Sets the font size of the value displayed in the center (px).               |   |   |   |
+| centerTextFontColor        | string   | white         | Sets the font color of the value displayed in the center.                   |   |   |   |
+| progressBarWidth           | number   | 10            | Sets the width of the progress bar within the circle (px).                  |   |   |   |
+| sliderBackgroundColor      | string   | white         | Sets the background color of the slider track.                              |   |   |   |
+| sliderFilledColor          | string   | #00d5b6       | Sets the color of the filled portion of the slider track based on progress. |   |   |   |
 
 ## Available Scripts
 
@@ -11,36 +51,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `yarn test`
+Runs test cases
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
