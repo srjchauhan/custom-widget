@@ -9,12 +9,12 @@ The `CapacityIndicator` component is used to display the capacity status in the 
 ## Props
 | Prop            | Type     | Default Value | Description                                                                                                     |
 |-----------------|----------|---------------|-----------------------------------------------------------------------------------------------------------------|
-| height          | string   | "350px"       | Sets the overall height of the indicator.                                                                       |
-| width           | string   | "300px"       | Sets the overall width of the indicator.                                                                        |
-| backgroundColor | string   | undefined     | Sets the background color of the indicator.                                                                     |
+| height          | string   | 350px       | Sets the overall height of the indicator.                                                                       |
+| width           | string   | 300px"       | Sets the overall width of the indicator.                                                                        |
+| backgroundColor | string   | #284e5d     | Sets the background color of the indicator.                                                                     |
 | onBarChange     | function | () => {}      | A callback function triggered when the active bar changes. It receives the selected bar's value as an argument. |
-| barDefaultColor | string   | "#819ca7"     | Sets the default color of the bars.                                                                             |
-| barActiveColor  | string   | "white"       | Sets the color of the active bar (the bar representing the selected value).                                     |
+| barDefaultColor | string   | #819ca7     | Sets the default color of the bars.                                                                             |
+| barActiveColor  | string   | white       | Sets the color of the active bar (the bar representing the selected value).                                     |
 | defaultValue    | number   |             1 | Sets the initial value (corresponding to a bar) displayed as active.                                            |
 
 # CircularSlider
